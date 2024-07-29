@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "explorer.fileNesting.enabled": true,
+        "explorer.autoRevealExclude": {
+            "**/explorer*": true
+        }
+    }
+}
+

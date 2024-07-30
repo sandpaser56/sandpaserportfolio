@@ -1,0 +1,6 @@
+{
+    "javascript.format.semicolons": "insert",
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "debug.javascript.autoAttachFilter": "always",
+    "files.autoSave": "onFocusChange"
+}

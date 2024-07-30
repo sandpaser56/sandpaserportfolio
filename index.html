@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah-Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>       
+<body>
+    <header>
+        <div class="container">
+            <h1>Elijah Bradley</h1>
+            <nav>
+                <ul class="navigation-items">
+                    <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                    <li class="navigation-item"><a href="#skills">Skills</a></li>
+                    <li class="navigation-item"><a href="#projects">Projects</a></li>
+                    <li class="navigation-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="image">
+            <img src="image2/image/Elijah.jpg.png" alt="Elijah Bradley">
+        </section>
+        <section id="description">
+            <p>Highly Skilled Web Development <span>Designer</span></p>
+        </section>
+        <section id="about-me">
+            <p>I started coding in 2022 at the age of 14. Over the past three years, I have immersed myself in coding, developing diverse skills across various programming languages. Despite now being 16, my dedication and continuous learning reflect my progression as a proficient coder eager to take on new challenges.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Java</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>These are my best showcase projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="image2/image/image1/piano.jpg.png" alt="Project 1 Image">
+                    <h3>Project 1</h3>
+                    <p>This project involves building a responsive website using HTML, CSS, and JavaScript. I was responsible for designing the layout and implementing the interactive elements.</p>
+                    <a href="project-cool/file:/Users/elijahbradley/Downloads/project-cool.txt.htm" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="image2/color.jpg.png" alt="Project 2 Image">
+                    <h3>Project 2</h3>
+                    <p>This project involves building a simple web design system using HTML CSS with JavaScript and Node.js. In this project, I decorated elements of the color fonts.
+                    </p>
+                    <div class="project-design"> 
+                    <a href="web-design/files/web-design.txt.html" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <section id="contact-info" class="contact-section">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or need further information, please contact me at:</p>
+                <p>Email: <a href="mailto:elijah.bradleyga23@gmail.com">elijah.bradleyga23@gmail.com</a></p>
+                <p>Phone: 406-470-8233</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Elijah</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

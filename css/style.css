@@ -1,0 +1,201 @@
+:root {
+    --primary-color: rgb(63, 63, 63);
+    --secondary-color: #0a66c2;
+    --text-color: #333;
+    --background-color: #f3f3f3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+.navigation-items {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.navigation-items li {
+    margin: 0;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    text-align: justify;
+}
+
+.navigation-item a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.main {
+    flex: 1; 
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #343335;
+    color: white;
+    margin-top: auto; 
+}
+
+#image {
+    text-align: center; 
+    padding: 4rem 0; 
+}
+
+#image img {
+    max-width: 100%; 
+    height: auto; 
+    display: inline-block; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color: #555;
+}
+
+#description p {
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+}
+
+#skills {
+    padding: 2rem 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.projects-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(44.424% - 2rem); /* Adjust based on how many cards per row */
+    transition: transform 0.3s ease;
+    max-width: calc(44.444% - 2rem); /* Ensure cards don't exceed available space */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.project-card p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.contact-section {
+    background-color: #fff; 
+    color: var(--primary-color); 
+    padding: 20px;
+    border-radius: 10
+}
+
+
+
+
+
+
+.contact-section p a {
+    color: rgb(63, 63, 63); 
+    text-decoration: none;
+}
+
+.contact-section p a:hover {
+    text-decoration: underline;
+}

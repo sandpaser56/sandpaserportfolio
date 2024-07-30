@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li class="dropdown">
+                        <a href="#fonts">Fonts</a>
+                        <ul class="dropdown-content">
+                            <li><a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a></li>
+                            <li><a href="https://fonts.google.com/specimen/Source+Code+Pro" target="_blank">Source Code Pro</a></li>
+                            <li><a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank">Playfair Display</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <h1>Your Website Headers</h1>
+
+            <section id="purpose">
+                <h2>Purpose of the Website</h2>
+                <p>This website design is to showcase various color designs and provide inspiration for creative projects. It targets designers, artists, and anyone interested in color theory.
+                </p>
+            </section>
+
+            <section id="colors">
+                <h2>Your Website Color Designs</h2>
+                <p>Explore the different color schemes below:</p>
+                <div class="color-container">
+                    <div class="color-panel cool-blue">
+                        <p class="color-label">Cool Blue</p>
+                        <p class="color-hex">#2d5dcc</p>
+                    </div>
+                    <div class="color-panel pink">
+                        <p class="color-label">Pink</p>
+                        <p class="color-hex">#d957d9</p>
+                    </div>
+                    <div class="color-panel mint-green">
+                        <p class="color-label">Mint Green</p>
+                        <p class="color-hex">#4fe0b0</p>
+                    </div>
+                    <div class="color-panel beige">
+                        <p class="color-label">Beige</p>
+                        <p class="color-hex">#efd9ca</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fonts">
+                <h2>Font Styles</h2>
+                <p class="strong source-code-pro">Font styles are the specific design and appearance of characters in a typeface. It encompasses various attributes, such as the shape, weight, spacing, and decorative elements of the letters.</p>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or need further information, please contact us at:</p>
+                <p>Email: <a href="mailto:elijah.bradleyga23@gmail.com">elijah.bradleyga23@gmail.com</a></p>
+                <p>Phone: 406-470-8233</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <p>
+                <a href="#purpose">Purpose</a> | 
+                <a href="#colors">Colors</a> | 
+                <a href="#fonts">Fonts</a> | 
+                <a href="#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
